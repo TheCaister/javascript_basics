@@ -21,18 +21,29 @@ let person = {
     age: 30
 };
 
-person.name = 'Bruh Manix'
+person.name = 'Bruh Manix';
 
 // Bracket notation can take variable values
-let selection = 'name'
-person[selection] = 'Brah Bruh'
+let selection = 'name';
+person[selection] = 'Brah Bruh';
 
 // Trying out arrays
 // You can have elements of different types in one array
 let selectColours = ['red', 'blue'];
-selectColours[2] = 'green'
-selectColours[3] = 1
+selectColours[2] = 'green';
+selectColours[3] = 1;
 
-console.log(name)
-console.log(person.name)
-console.log(selectColours)
+function greet(name, surname){
+    console.log('Hello, ' + name + ' ' + surname + '!');
+}
+
+function square(number){
+    return number * number;
+}
+
+console.log(name);
+console.log(person.name);
+console.log(selectColours);
+greet('Eddie', 'Cai');
+greet('Mark', 'Dooferton');
+console.log(square(3));
